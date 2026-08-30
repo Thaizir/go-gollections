@@ -3,11 +3,9 @@ package set
 import (
 	"iter"
 	"slices"
-	"sync"
 )
 
 type Set[T comparable] struct {
-	mu       sync.RWMutex
 	elements map[T]struct{}
 }
 
